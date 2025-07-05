@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- 🌞🌙 Dark Mode Switch -->
+    <div class="toggle-wrapper">
+        <span class="icon sun">🌞</span>
+        <input type="checkbox" id="toggle" hidden>
+        <label for="toggle" class="switch">
+            <span class="slider"></span>
+        </label>
+        <span class="icon moon">🌙</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="mainframe">
+        <div class="column1">
+            <pre>Welcome to the
+<b>Frontend Quiz!</b></pre>
+            <p>Pick a subject to get started</p>
+        </div>
+        <div class="column2">
+            <button class="quiz-button-HTML">
+                <img src="https://www.educative.io/api/page/5184213461499904/image/download/6096311389519872" />
+                <span>HTML</span>
+            </button><br>
+            <button class="quiz-button-CSS">
+                <img src="https://as2.ftcdn.net/v2/jpg/02/49/94/27/1000_F_249942709_30yeu8oRHYK3flNN2OMW22NqbDQx4Kcx.jpg" />
+                <span>CSS</span>
+            </button><br>
+            <button class="quiz-button-JavaScript">
+                <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png" />
+                <span>JavaScript</span>
+            </button><br>
+            <button class="quiz-button-Accessibility">
+                <img src="https://cdn-icons-png.flaticon.com/512/9800/9800947.png" />
+                <span>Accessibility</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById("toggle");
+        toggle.addEventListener("change", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+</body>
+</html>

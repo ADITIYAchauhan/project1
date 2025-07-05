@@ -1,0 +1,105 @@
+.toggle-wrapper {
+  position: absolute;
+  top: 100px; 
+  right: 210px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+}
+.switch {
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+input:checked + .switch .slider {
+  transform: translateX(24px);
+}
+#toggle:checked + .switch {
+  background-color: #7636a4;
+}
+
+#toggle:checked + .switch::before {
+  transform: translateX(25px);
+}
+body {
+  margin: 0;
+  background-color: rgb(117, 150, 134);
+  color: black;
+  border: 4px solid black;
+  transition: 0.4s;
+}
+
+body.dark {
+  background-color: rgb(54, 70, 90);
+  color: white;
+  border: 4px solid white;
+}
+
+.column1,
+.column2 button {
+  color: inherit;
+}
+.mainframe {
+    display: flex;
+    gap: 6rem;
+    padding: 212px;
+
+}
+.column1{
+    color: white;
+}
+.column1 pre{
+    font-size: 40px;
+    margin-top: 0;
+}
+.column1 p3{
+    font-size: small;
+    font-style: italic;
+}
+.column2 {
+    margin-left: auto;
+}
+
+.column2 button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px;
+    height: 60px;
+    width: 400px;
+    border: none;                          
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: white;                          
+}
+
+
+.column2 button img {
+    height: 40px;
+    width: 50px;
+    margin-left: 0;
+    border-radius: 7px;
+}
